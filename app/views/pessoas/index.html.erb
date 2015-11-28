@@ -1,4 +1,5 @@
 <h1> lista de pacientes</h1>
+<%= link_to "Novo Paciente", new_pessoa_path %>
 <table>
 	<thead>
 		<tr> 
@@ -11,6 +12,7 @@
 		  	<tr>
  				<td> <%= pessoa.nome %> </td>
  				<td> <%= pessoa.codigo %> </td>
+ 				<td> <%= link_to "Deletar", pessoa_path(pessoa.id), method: :delete, data: {confirm: "Tem certeza?"} %> </td>
  			</tr>
 		<% end %>
 	</tbody>
