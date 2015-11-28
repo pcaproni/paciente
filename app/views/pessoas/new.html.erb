@@ -1,0 +1,9 @@
+<%= form_for :pessoa do |f| %>
+nome :<%= f.text_field :nome %> <br />
+data de nascimento :<%= f.text_field :data_de_nascimento %> <br />
+código :<%= f.text_field :codigo %> <br />
+peso :<%= f.text_field :peso %> <br />
+altura :<%= f.text_field :altura %> <br />
+hipertensão :<%= f.radio_button :hipertensao, :true %> sim <br />
+<%= f.radio_button :hipertensao, :false, checked:true %> não <br />
+<% end%>

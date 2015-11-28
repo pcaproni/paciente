@@ -4,8 +4,8 @@ class CreatePessoas < ActiveRecord::Migration
       t.string :nome
       t.date :data_de_nascimento
       t.string :codigo
-      t.decimal :peso
-      t.decimal :altura
+      t.decimal :peso, precision:4, scale:2
+      t.decimal :altura, precision:4, scale:2
       t.boolean :hipertensao
       t.boolean :diabetes
       t.boolean :colesterol
