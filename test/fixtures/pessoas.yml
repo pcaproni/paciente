@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  data_de_nascimento: 2015-11-28
+  codigo: MyString
+  peso: 9.99
+  altura: 9.99
+  hipertensao: false
+  diabetes: false
+  colesterol: false
+  status: MyString
+
+two:
+  nome: MyString
+  data_de_nascimento: 2015-11-28
+  codigo: MyString
+  peso: 9.99
+  altura: 9.99
+  hipertensao: false
+  diabetes: false
+  colesterol: false
+  status: MyString
