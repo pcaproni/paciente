@@ -13,6 +13,7 @@
  				<td> <%= pessoa.nome %> </td>
  				<td> <%= pessoa.codigo %> </td>
  				<td> <%= link_to "Deletar", pessoa_path(pessoa.id), method: :delete, data: {confirm: "Tem certeza?"} %> </td>
+ 				<td> <%= link_to "Exibir", pessoa_path(pessoa.id) %> </td>
  			</tr>
 		<% end %>
 	</tbody>

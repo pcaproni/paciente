@@ -23,4 +23,8 @@ class PessoasController < ApplicationController
     @pessoa.destroy
     redirect_to pessoas_path
   end 
+  def show
+  	@pessoa = Pessoa.find(params[:id])
+ 	
+  end
 end

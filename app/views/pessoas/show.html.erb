@@ -1,0 +1,31 @@
+<h1> Informações do Paciente </h1>
+<p> <strong> Nome </strong> 
+ <%= @pessoa.nome %>
+ </p>
+ <p> <strong> Data de Nascimento </strong> 
+ <%= @pessoa.data_de_nascimento %>
+ </p> 
+ <p> <strong> Código </strong> 
+ <%= @pessoa.codigo %>
+ </p>
+ <p> <strong> IMC </strong> 
+ <%= calculo_imc(@pessoa) %>
+ </p>
+ <p> <strong> Peso </strong> 
+ <%= @pessoa.peso %>
+ </p>
+ <p> <strong> Altura </strong> 
+ <%= @pessoa.altura %>
+ </p>
+ <p> <strong> Hipertensão </strong> 
+ <%= @pessoa.hipertensao %>
+ </p>
+ <p> <strong> Diabetes </strong> 
+ <%= @pessoa.diabetes %>
+ </p>
+ <p> <strong> Colesterol </strong> 
+ <%= @pessoa.colesterol %>
+ </p>
+ <p> <strong> Status </strong> 
+ <%= @pessoa.status %>
+ </p>
