@@ -4,12 +4,13 @@ data de nascimento :<%= f.text_field :data_de_nascimento %> <br />
 código :<%= f.text_field :codigo %> <br />
 peso :<%= f.text_field :peso %> <br />
 altura :<%= f.text_field :altura %> <br />
-hipertensão :<%= f.radio_button :hipertensao, :true %> sim <br />
+hipertensão: </br> <%= f.radio_button :hipertensao, :true %> sim <br />
 <%= f.radio_button :hipertensao, :false, checked:true %> não <br />
-Diabetes :<%= f.radio_button :diabetes, :true %> sim <br />
+Diabetes : </br> <%= f.radio_button :diabetes, :true %> sim <br />
 <%= f.radio_button :diabetes, :false, checked:true %> não <br />
-Colesterol :<%= f.radio_button :colesterol, :true %> sim <br />
+Colesterol :</br> <%= f.radio_button :colesterol, :true %> sim <br />
 <%= f.radio_button :colesterol, :false, checked:true %> não <br />
-<%= f.select :status, ["Aguardando", "Operado Fora", "Operado", "Óbito Pré", "Óbito pós"] %>
+Status do Paciente: <%= f.select :status, ["Aguardando", "Operado Fora", "Operado", "Óbito Pré", "Óbito pós"] %> </br>
+<%= f.submit "cadastrar paciente" %> 
 <% end%>
 

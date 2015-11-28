@@ -1,1 +1,17 @@
 <h1> lista de pacientes</h1>
+<table>
+	<thead>
+		<tr> 
+			<th> Nome </th>
+			<th> Código </th> 
+		</tr> 
+	</thead>
+	<tbody>
+		<% @pessoas.each do |pessoa| %>
+		  	<tr>
+ 				<td> <%= pessoa.nome %> </td>
+ 				<td> <%= pessoa.codigo %> </td>
+ 			</tr>
+		<% end %>
+	</tbody>
+</table>

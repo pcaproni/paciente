@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get "pessoas" => "pessoas#index"
   get "pessoas/new" => "pessoas#new"
+  post "pessoas/new" => "pessoas#create"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
