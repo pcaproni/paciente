@@ -6,4 +6,10 @@ peso :<%= f.text_field :peso %> <br />
 altura :<%= f.text_field :altura %> <br />
 hipertensão :<%= f.radio_button :hipertensao, :true %> sim <br />
 <%= f.radio_button :hipertensao, :false, checked:true %> não <br />
+Diabetes :<%= f.radio_button :diabetes, :true %> sim <br />
+<%= f.radio_button :diabetes, :false, checked:true %> não <br />
+Colesterol :<%= f.radio_button :colesterol, :true %> sim <br />
+<%= f.radio_button :colesterol, :false, checked:true %> não <br />
+<%= f.select :status, ["Aguardando", "Operado Fora", "Operado", "Óbito Pré", "Óbito pós"] %>
 <% end%>
+
